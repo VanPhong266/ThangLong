@@ -1,0 +1,11 @@
+{
+  "liveServer.settings.port": 5501,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
+  "javascript.preferences.quoteStyle": "single"
+}

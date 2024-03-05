@@ -1,0 +1,317 @@
+.social-wrap {
+  display: flex;
+  ul {
+    display: flex;
+    li {
+      margin-left: 10px;
+    }
+  }
+}
+// page career
+.career {
+  margin: 50px auto;
+}
+.tb-career {
+  overflow-x: auto;
+  table {
+    min-width: 600px;
+    color: $c-text;
+    tr {
+      &:last-child td {
+        border: none;
+      }
+      th {
+        color: white;
+        font-family: $f2;
+        font-weight: normal;
+        text-transform: uppercase;
+        background: $c1;
+        min-width: 190px;
+        padding: 1.25rem 2.5rem;
+        border-right: 1px solid #fff;
+      }
+      td {
+        font-family: $f2;
+        padding: 1.25rem 2.5rem;
+        border-bottom: solid 1px #b5b6b6;
+        vertical-align: middle;
+
+        .view-dt {
+          font-family: $f2;
+          color: $c1;
+          transition: 0.2s;
+          white-space: nowrap;
+          &:hover {
+            color: $c2;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        background: #f6f7f8;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .tb-career table tr {
+    td {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .view-dt {
+        padding: 8px 30px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .tb-career table tr {
+    td {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .tb-career table {
+    tr td {
+      .view-dt {
+        padding: 8px 20px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+}
+
+//recuit detail
+.recruit-detail {
+  margin: 50px 0 70px;
+  .title {
+    font-weight: 500;
+    font-family: $f2;
+    font-size: 1.625rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .s-content {
+    margin-bottom: 0;
+  }
+  .short-info {
+    padding: 15px 0 20px;
+    border-bottom: 1px solid #d2d2d2;
+    font-size: 1rem;
+    font-family: $f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .date {
+      margin-bottom: 10px;
+    }
+    i {
+      margin-right: 6px;
+      margin-top: -2px;
+      color: $c2;
+    }
+  }
+}
+.recruit-box {
+  padding: 1.875rem 1.875rem 2.75rem 1.875rem;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  .i-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.875rem;
+    font-weight: 500;
+    font-family: $f2;
+    color: $c1;
+  }
+  .ct {
+    margin-bottom: 35px;
+  }
+  .line {
+    margin-bottom: 20px;
+    position: relative;
+    .input {
+      width: 100%;
+      height: 38px;
+      border: solid 1px rgb(183, 183, 183);
+      padding-right: 40px;
+      @include place(#a3a3a3);
+      font-size: 0.875rem;
+      border-radius: 5px;
+      background-color: rgb(246, 247, 248);
+    }
+    ::placeholder {
+      color: #172d06;
+    }
+    input[type="file"] {
+      font-size: 0.875rem;
+      width: 100%;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .submit {
+    height: 42px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    background-color: $c1;
+    color: #fff;
+    transition: 0.3s;
+    margin-top: 10px;
+    &:hover {
+      background-color: darken($c1, 10%);
+    }
+  }
+  .download {
+    text-align: center;
+    p {
+      margin-bottom: 15px;
+    }
+    a {
+      @include middle;
+      text-transform: uppercase;
+      text-align: center;
+      width: 280px;
+      max-width: 100%;
+      height: 42px;
+      background-color: white;
+      border-radius: 5px;
+      line-height: 42px;
+      color: $c2;
+      border: 1px solid $c2;
+      &:hover {
+        background-color: $c2;
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .recruit-detail {
+    margin: 20px 0 30px;
+    .title {
+      font-size: 18px;
+    }
+    .info {
+      padding: 10px 0;
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+  .recruit-box {
+    padding: 25px 15px;
+  }
+}
+@media (max-width: 575px) {
+  .social-wrap {
+    height: 30px;
+  }
+  .recruit-detail {
+    .title {
+      text-align: center;
+    }
+    .short-info {
+      flex-direction: column;
+      padding: 0 0 20px;
+      .due-date {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// contact
+.contact-us {
+  padding-top: 50px;
+  .title {
+    font-size: 1.625rem;
+    text-transform: uppercase;
+    font-family: $f2;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+  }
+  .info-contact {
+    margin-bottom: 3.125rem;
+    .title {
+      margin-bottom: 1.5rem;
+      color: $c1;
+      position: relative;
+      .text {
+        margin-left: 16px;
+        position: absolute;
+        top: 16px;
+      }
+    }
+    .address li {
+      font-size: 1.125rem;
+      margin: 8px 0;
+      font-family: $f2;
+      font-weight: 300;
+      span {
+        font-weight: 400;
+      }
+      i {
+        color: $c2;
+        margin-right: 16px;
+      }
+    }
+  }
+}
+.contact-msg {
+  background-color: #fff;
+  padding: 50px 0 45px;
+  .title {
+    font-size: 1.625rem;
+    font-family: $f2;
+    margin-bottom: 3.125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 991px) {
+  .contact-us .info-contact {
+    margin-bottom: 1rem;
+    .col-lg-6 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-us {
+    padding-top: 30px;
+    .title {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+    .info-contact {
+      .title {
+        margin-bottom: 1rem;
+      }
+      .address li {
+        font-size: 1rem;
+        margin: 8px 0;
+        font-family: $f2;
+        font-weight: 300;
+      }
+    }
+  }
+}

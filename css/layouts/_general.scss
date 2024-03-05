@@ -1,0 +1,161 @@
+body {
+  font-size: 16px;
+  font-family: $f1;
+  line-height: 1.5;
+  color: $c-text;
+  &.page {
+    padding-top: 95px;
+    @media (max-width: 1600px) {
+      padding-top: 80px;
+    }
+    @media (max-width: 1199px) {
+      padding-top: 61px;
+    }
+  }
+}
+
+.fz16 {
+  font-size: 16px;
+  @media (max-width: 1600px) {
+    font-size: 14px;
+  }
+}
+.fz18 {
+  font-size: 18px;
+  @media (max-width: 1600px) {
+    font-size: 15px;
+  }
+}
+.fz20 {
+  font-size: 20px;
+  @media (max-width: 1600px) {
+    font-size: 16.67px;
+  }
+  @media (max-width: 1199px) {
+    font-size: 15px;
+  }
+}
+.fz22 {
+  font-size: 22px;
+  @media (max-width: 1600px) {
+    font-size: 18px;
+  }
+  @media (max-width: 1199px) {
+    font-size: 16px;
+  }
+}
+.fz24 {
+  font-size: 24px;
+  @media (max-width: 1600px) {
+    font-size: 20px;
+  }
+  @media (max-width: 1199px) {
+    font-size: 18px;
+  }
+}
+
+.fz30 {
+  font-size: 30px;
+  @media (max-width: 1600px) {
+    font-size: 24px;
+  }
+  @media (max-width: 1199px) {
+    font-size: 18px;
+  }
+}
+.wrap {
+  overflow: hidden;
+}
+/* width */
+.scroll-bar::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+/* Track */
+.scroll-bar::-webkit-scrollbar-track {
+  background: rgba(#000, 0);
+  border-radius: 8px;
+}
+
+/* Handle */
+.scroll-bar::-webkit-scrollbar-thumb {
+  background: rgba(#000, 0.1);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+  background: rgba(#000, 0.1);
+}
+.delay01 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.delay02 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.delay03 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.delay04 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.delay05 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.delay06 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.delay07 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.delay08 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.delay09 {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.delay10 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.delay12 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.delay14 {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.delay16 {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+.delay18 {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+@keyframes Tzoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animated.Tzoom {
+  animation-name: Tzoom;
+  animation-duration: 10s;
+}
